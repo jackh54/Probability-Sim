@@ -2,6 +2,7 @@ from flask import Flask, jsonify, request, render_template, session
 import random
 
 app = Flask(__name__, template_folder='templates', static_folder='static')
+app.secret_key = 'verysecret'
 
 def get_experiment_data(experiment_name):
     """Retrieve the session-stored experiment data"""
