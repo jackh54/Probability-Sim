@@ -93,6 +93,8 @@ a {
 
 a:hover {
     text-decoration: underline;
+    transition: color 0.3s ease-in-out;
+    color: #3498db;
 }
 
 .graph-container {
@@ -101,6 +103,7 @@ a:hover {
     align-items: center;
     margin-top: 20px;
     width: 100%;
+    animation: fadeIn 1s ease-in-out;
 }
 
 canvas {
@@ -111,4 +114,20 @@ canvas {
     border-radius: 10px;
     padding: 10px;
     display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+canvas:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
