@@ -1,10 +1,10 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
-    background-color: #f4f4f9;
-    color: #333;
+    background: linear-gradient(135deg, #1e1e1e, #2a2a2a);
+    color: white;
     margin: 0;
-    padding: 0;
+    padding: 20px;
 }
 
 .container {
@@ -86,15 +86,15 @@ canvas {
 a {
     display: block;
     margin-top: 20px;
-    color: #1abc9c;
+    color: #f39c12;
     text-decoration: none;
     font-size: 1.2rem;
-    transition: color 0.3s ease-in-out;
 }
 
 a:hover {
     text-decoration: underline;
-    color: #16a085;
+    transition: color 0.3s ease-in-out;
+    color: #3498db;
 }
 
 .graph-container {
@@ -104,10 +104,6 @@ a:hover {
     margin-top: 20px;
     width: 100%;
     animation: fadeIn 1s ease-in-out;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 canvas {
