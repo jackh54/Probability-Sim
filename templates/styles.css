@@ -1,0 +1,71 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+p {
+    margin-top: 5px;
+    font-size: 1.2em;
+}
+
+main {
+    padding: 40px 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.experiment-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.experiment-card {
+    background: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    text-align: left;
+}
+
+.experiment-card:hover {
+    transform: translateY(-5px);
+}
+
+.experiment-image {
+    width: 100%;
+    height: 180px;
+    background: #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.experiment-info h2 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.experiment-info p {
+    font-size: 1em;
+    color: #666;
+}

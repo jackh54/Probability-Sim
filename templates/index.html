@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probability Simulations</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Probability Simulations</h1>
+        <p>Explore different probability experiments with interactive simulations.</p>
+    </header>
+    <main>
+        <section class="experiment-list">
+            <div class="experiment-card" onclick=\"location.href='/experiments/experiment1'\">
+                <div class="experiment-image" id="exp1-image"></div>
+                <div class="experiment-info">
+                    <h2>Experiment 1: Coin Flip</h2>
+                    <p>Simulate flipping a coin and analyze probability outcomes.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        gsap.from("header", { duration: 1, y: -50, opacity: 0, ease: "power2.out" });
+        gsap.from(".experiment-card", { duration: 1, scale: 0.8, opacity: 0, stagger: 0.2, ease: "back.out(1.7)" });
+    </script>
+</body>
+</html>
