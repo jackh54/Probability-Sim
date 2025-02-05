@@ -1,0 +1,114 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #1e1e1e, #2a2a2a);
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #cccccc;
+}
+
+.coin-container {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+
+.coin {
+    width: 100px;
+    height: 100px;
+    background: url('/static/front.png') no-repeat center/cover;
+    border-radius: 50%;
+    transition: transform 0.6s ease-in-out;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+button {
+    background: #f39c12;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    margin: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #e67e22;
+    transform: scale(1.05);
+}
+
+.results {
+    margin-top: 15px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.results p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    color: #f1f1f1;
+}
+
+canvas {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+a {
+    display: block;
+    margin-top: 20px;
+    color: #f39c12;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.graph-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+canvas {
+    width: 300px !important;
+    height: 300px !important;
+    max-width: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 10px;
+    display: block;
+}

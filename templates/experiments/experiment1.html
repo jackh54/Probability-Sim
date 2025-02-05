@@ -3,9 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Experiment 1: Coin Flip</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='experiment1.css') }}">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.1/chart.umd.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script defer src="{{ url_for('static', filename='experiment1.js') }}"></script>
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Experiment 1: Coin Flip</h1>
+        <p>Click the button to flip the coin and track the results.</p>
+
+        <div class="coin-container">
+            <div id="coin" class="coin"></div>
+        </div>
+
+        <button id="flip-button">Flip Coin</button>
+
+        <div class="results">
+            <p>Last Flip: <span id="last-flip">None</span></p>
+            <p>Total Flips: <span id="total-flips">0</span></p>
+            <p>Heads: <span id="heads-count">0</span></p>
+            <p>Tails: <span id="tails-count">0</span></p>
+            <p>Heads Probability: <span id="heads-probability">0%</span></p>
+            <p>Tails Probability: <span id="tails-probability">0%</span></p>
+        </div>
+
+        <div class="graph-container">
+            <canvas id="flipChart"></canvas>
+        </div>
+        
+
+        <button id="reset-button">Reset Experiment</button>
+
+        <a href="/">Back to Home</a>
+    </div>
 </body>
 </html>
